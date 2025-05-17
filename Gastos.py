@@ -2,6 +2,10 @@
 # ### Proyecto Python ##########
 # ################################
 
+import json
+from Gestion_Datos import *
+from Mis_funciones import *
+
 print("=========================================")
 print("       Simulador de Gasto Diario         ")
 print("=========================================")
