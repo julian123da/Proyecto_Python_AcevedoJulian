@@ -5,11 +5,14 @@ def menuPrincipal ():
         Simulador de Gasto Diario 
         =====================================
         Seleccione un opcion:
-        1.Registar nuevo gasto
-        2.Listar de gastos 
-        3.Calcular total de gastos
-        4.Generar reporte de gastos
-        5.Salir
+        1.Registrar nuevo gasto
+        2.Consultar gasto
+        3.Actualizar gasto
+        4.Eliminar gasto
+        5.Listar gasto
+        6.Calcular total de gastos
+        7.Generar reporte de gastos
+        8.Salir
         ======================================''')
     
 def primerMenu ():
@@ -26,11 +29,11 @@ def primerMenu ():
         Ingrese 's' para guardar o 'c' para cancelar.
         ===============================================''')
     
-    def segundoMenu ():
+def segundoMenu ():
         print('''
-            ==================================
-            Listar de Gastos 
-              =================================
+        ==================================
+            istar de Gastos 
+            =================================
             Seleccione una opcion para filtrar los gastos:
 
             1.Ver todos los gastos
@@ -39,7 +42,7 @@ def primerMenu ():
             4.Regresar al menu principal
               =================================''')
         
-        def tercerMenu ():
+def tercerMenu ():
             print('''
                 =====================================
                 Calcular Total de gastos 
@@ -51,3 +54,22 @@ def primerMenu ():
                 3.Calcular total mensual
                 4.Regresar al menu principal
                 =======================================''')
+            
+
+def cuartoMenu ():
+       print('''
+             ======================================
+             Generar reporte de gastos 
+             ======================================
+             Seleccione el tipo de reporte:
+             
+             1.Reporte diaro
+             2.Reporte semanal
+             3.Reporte mensaual
+             4.Regresar al menu principal
+             =====================================''')
+       
+def salida ():
+       print("¿Deseas salir del programa? (S/N):")
+
+    

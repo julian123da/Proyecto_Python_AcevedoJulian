@@ -1,6 +1,11 @@
-[
-    {
-        "Hola": "mundo"
-        
-    }
-]
+{
+    "id": 1,
+    "gastos":[
+        {
+            "id": 1,
+            "monto": 2,
+            "categoria":3,
+            "descripcion":""
+        }
+    ]
+}

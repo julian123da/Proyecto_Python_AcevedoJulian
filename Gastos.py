@@ -5,27 +5,28 @@
 import json
 from Gestion_Datos import *
 from Mis_funciones import *
+from tabulate import tabulate
+import datetime
 
-print("=========================================")
-print("       Simulador de Gasto Diario         ")
-print("=========================================")
-print("Seleccione una opcion: ")
-print("")
-print("1.Registrar nuevo gasto")
-print("2.Lsta de gastos")
-print("3.Calcular total de gastos")
-print("4.Generar reporte de gastos")
-print("5.Salir")
-print("=========================================")
-opcionUsuario=int(input())
+listaGastos = abrir(JSON)
 
-if (opcionUsuario==1):
-    print("=====================================")
-    print("      Registar Gastos Nuevos         ")
-    print("=====================================")
-    print("")
-    print("Ingrese la informacion del gasto")
 
-    montoNuevo=input("Monto del gasto: ")
-    categoriaNueva=input("Categoria: ")
-    descripcionNueva=input("Descripcion (opcional):")
+booleano = True
+while (booleano == True):
+    menuPrincipal()
+    opcionNumerica = int(input("Selecciona tu opcion: "))
+    if opcionNumerica == 1:
+        primerMenu()
+        monto = input("INgresa el nombre del usuario: ")
+        categoria = input('Ingresa el apellido del usuario: ')
+        descripcion = input("(opcional Añade la descripcion de tu gusto:)")
+        dic1 = {
+            "id":1, "monto": monto, "categoria": categoria, "descripcion": descripcion
+        }
+        listaGastos['gastos']. append(dic1)
+        guardarJSON(listaGastos)
+        print (tabulate(listaGastos))
+        # table = lista
+        # print (tabulate(lista))
+
+        #Desrrollado por Julian David Acevedo Gomez TI 1.097.100.290
