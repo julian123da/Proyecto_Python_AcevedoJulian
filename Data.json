@@ -1,11 +1,22 @@
 {
-    "id": 1,
-    "gastos":[
+    "gastos": [
         {
             "id": 1,
-            "monto": 2,
-            "categoria":3,
-            "descripcion":""
+            "monto": 35.0,
+            "categoria": "trans",
+            "descripcion": ""
+        },
+        {
+            "id": 2,
+            "monto": 35.0,
+            "categoria": "asdf",
+            "descripcion": ""
+        },
+        {
+            "id": 3,
+            "monto": 34.0,
+            "categoria": "asas",
+            "descripcion": ""
         }
     ]
 }
