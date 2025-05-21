@@ -72,4 +72,17 @@ def cuartoMenu ():
 def salida ():
        print("¿Deseas salir del programa? (S/N):")
 
+def resultadosGastos(dict):
+       listaGastos=dict["gastos"]
+       id = len(listaGastos)
+       for i in range (len(listaGastos)):
+              if (id == listaGastos[i]["id"]):
+                     dict = [['id', listaGastos[i]["id"]],["monto", listaGastos[i]["monto"], ["categoria", listaGastos]]]
+                     return dict
+              
+def total():
+       listaGastos = G
+       for i in range (len(listaGastos)):
+              if id = (listaGastos[i] ["id"])
+
     

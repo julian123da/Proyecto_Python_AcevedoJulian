@@ -2,6 +2,7 @@
 # ### Proyecto Python ##########
 # ################################
 
+# Se importa la informacion al archivo principal
 import json
 from Gestion_Datos import *
 from Mis_funciones import *
@@ -10,23 +11,36 @@ import datetime
 
 listaGastos = abrirJSON()
 
-booleano = True
-while (booleano == True):
+booleano = True 
+while (boolano == True):
     menuPrincipal()
-    opcionNumeria = int(input("Selecciona tu opcion: "))
-    if opcionNumerica == 1:
+    opcionNumerica = int(input("Selecciona tu opcion: "))
+    if (opcionNumerica == 1):
         primerMenu()
-        monto = float(input("Ingresa el monto del gasto: "))
-        categoria = input('Ingresa el apellido del usuario: ')
-        descripcion = input("(opcional) Añade la descripcion de tu gasto: ")
+        monto = float(input("Ingrese el monto de gasto: "))
+        categoria = input('Ingresa el tipo de gasto (ejem: trasnporte, comida, ): ')
+        descripcion = input("(opconal) Añade la descripcion de tu gasto: ")
+        fecha = input("Ingresa la fecha del gasto realizado")
         dic1 = {
             "id":1, "monto": monto, "categoria": categoria, "descripcion": descripcion
         }
         listaGastos['gastos'].append(dic1)
         guardarJSON(listaGastos)
-        table = listaGastos
+        table = mostrarGastos(listaGastos)
         print(tabulate(table))
+    if (opcionNumerica == 2):
+        segundoMenu()
+
+    if (opcionNumerica == 3):
+        tercerMenu()    
+
+    if (opcionNumerica == 4):
+        cuartoMenu
+
+    if (opcionNumerica == 8):
+        booleano = False
+
     # table = lista
     # print (tabulate(lista))
 
-    #Desrrollado por Julian David Acevedo Gomez TI 1.097.100.290
+    # Desarrollado por Julian David Acevedo Gomez T.I 1.097.100.290
