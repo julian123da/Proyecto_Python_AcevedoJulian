@@ -1,16 +1,4 @@
 {
-    "gastos": [
-        {
-            "id": 1,
-            "monto": 35.0,
-            "categoria": "trans",
-            "descripcion": " "
-        },
-        {
-            "id": 1,
-            "monto": "s",
-            "categoria": "perez",
-            "descripcion": "opcional"
-        }
-    ]
+    "fecha": "21/05/2025",
+    "categoria"
 }
