@@ -1,0 +1,16 @@
+{
+    "gastos": [
+        {
+            "id": 1,
+            "monto": 35.0,
+            "categoria": "trans",
+            "descripcion": " "
+        },
+        {
+            "id": 1,
+            "monto": "s",
+            "categoria": "Perez",
+            "descripcion": "opcional"
+        }
+    ]
+}
